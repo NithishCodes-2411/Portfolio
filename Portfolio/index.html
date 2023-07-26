@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang = "em">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content= "IE-edge">
+        <meta name = "viewport" conmtent =  "width=device-width initial - scale =1.0" >
+        <title>Nithish - Portfolio</title>
+        <link rel = "stylesheet" href = "style.css">
+    
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href ="#">Home</a></li>
+                        <li><a href ="#about">About</a></li>
+                        <li><a href ="https://github.com/NithishCodes-2411">Github</a></li>
+                        <!--<li><a href ="#">Contact</a></li>-->
+                    </ul>
+                </nav>
+                <div class="headerText">
+                    <p>Software developer</p><br>
+                    <h1>Hello, I am <span>Nithish</span> <br> from Canada.</h1>
+                    
+                </div>
+            </div>
+        </div>
+       
+        <!--About-->
+        <div id="about">
+            <div class="container">
+                <d  iv class="row">
+                    <div class="aboutCol-1">
+                        <img src = "img/amPic.png" >
+                    </div>
+                    <div class = "aboutCol-2">
+                        <h1 class="abText">About me</h1>
+                        <br> 
+                        <p class = "abText2">Hello and welcome! I am a rising sophomore at Dalhousie University majoring in Computer Science. 
+                            As an aspiring software engineer, I aim to use and create the technologies of our time with the
+                            best interests of our species in mind. A tinkerer at heart, I am forever available for
+                            projects/ideas/concepts that nudge my creativity and test my ethics - if you have something 
+                            in mind, do reach out.  </p>
+
+                            <div class="tab-titles">
+                                <p class = "tab-links active-Links" onclick="openTab('skills')">Skills</p>
+                                <p class = "tab-links" onclick="openTab('education')">Education</p>
+                            </div>
+                            <div class="tabContents active-Tab" id="skills">
+                                <ul>
+                                    <li><span>Web development</span><br> Designing web interfaces </li>
+                                    <li><span>App development</span><br> Building android/ios application</li>
+                                </ul>
+                            </div>
+                            <div class="tabContents" id="education">
+                                <ul>
+                                    <li><span>2026 - Expected</span><br> BCS at Dalhousie<br>Halifax, NS. </li>
+                                    <li><span>2021</span><br> High School Diploma at Velammal <br>Chennai, India.</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Services
+        <div id="service">
+            <div class = "container">
+                <h1 class = "subTitles">My Service</h1>
+                <div class = "serviceList">
+                    <div>
+                        <h2>Web developemt</h2>
+
+                    </div>
+                </div>
+                
+                    
+            </div>
+        </div>-->
+
+
+        <!--Projects
+        <div id="portfolio">
+            <div class="container">
+                <h1 class = "subTitles">My work</h1>
+                <div class="workList">
+                    <div class="work">
+                        <img src = "img/work-1.png">
+                        <div class = "layer ">
+                            <h3>Budget allocation App</h3>
+                            <p>This app helps you to keep a note of your expenses.Download it from the play store</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src = "img/work-1.png">
+                        <div class = "layer ">
+                            <h3>Budget allocation App</h3>
+                            <p>This app helps you to keep a note of your expenses.Download it from the play store</p>
+                            <a href = "#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src = "img/work-1.png">
+                        <div class = "layer ">
+                            <h3>Budget allocation App</h3>
+                            <p>This app helps you to keep a note of your expenses.Download it from the play store</p>
+                            <a href = "#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+-->
+
+        <!--JavaScript-->
+        <script>
+            
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontent = document.getElementsByClassName("tabContents");
+
+            function openTab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-Links");
+                }
+                for(tab of tabcontent){
+                    tab.classList.remove("active-Tab");
+                }
+                event.currentTarget.classList.add("active-Links");
+                document.getElementById(tabname).classList.add("active-Tab");
+            }
+        </script>
+      
+
+    </body>
+</html>
+
